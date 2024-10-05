@@ -1,0 +1,640 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl/"
+     xml:base="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:makeup_store="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store#"
+     xmlns:makeup_store1="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#awardedTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#awardedTo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#BestPick"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Product"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#costs -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#costs">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Product"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Price"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#found -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#found">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Owner"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Brand"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#hasProduct -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#hasProduct">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Brand"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Product"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#promotes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#promotes">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#BrandAmbassador"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Brand"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#has_ba_mail -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#has_ba_mail">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#BrandAmbassador"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#has_ba_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#has_ba_name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#BrandAmbassador"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#has_brand_code -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#has_brand_code">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Brand"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#has_brand_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#has_brand_name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Brand"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#has_owner_mail -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#has_owner_mail">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Owner"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#has_owner_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#has_owner_name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Owner"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#has_price_range -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#has_price_range">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Price"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#has_product_code -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#has_product_code">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#has_product_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#has_product_name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#has_rating_desc -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#has_rating_desc">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#BestPick"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#has_rating_value -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#has_rating_value">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#BestPick"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#BestPick -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#BestPick"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Blush -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Blush">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#EyeProduct"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Brand -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Brand"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#BrandAmbassador -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#BrandAmbassador"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Cushion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Cushion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Product"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#EyeProduct -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#EyeProduct">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Product"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#LipProduct -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#LipProduct">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Product"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Owner -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Owner"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Price -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Price"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Product -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Product"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Affordable -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Affordable">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Price"/>
+        <makeup_store1:has_price_range>&lt; Rp 75000,-</makeup_store1:has_price_range>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#BA1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#BA1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#BrandAmbassador"/>
+        <makeup_store1:promotes rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Brand1"/>
+        <makeup_store1:has_ba_mail>kimminji@mail.com</makeup_store1:has_ba_mail>
+        <makeup_store1:has_ba_name>Kim Minji</makeup_store1:has_ba_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#BA2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#BA2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#BrandAmbassador"/>
+        <makeup_store1:promotes rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Brand2"/>
+        <makeup_store1:has_ba_mail>hannipham@mail.com</makeup_store1:has_ba_mail>
+        <makeup_store1:has_ba_name>Hanni</makeup_store1:has_ba_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#BA3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#BA3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#BrandAmbassador"/>
+        <makeup_store1:promotes rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Brand3"/>
+        <makeup_store1:has_ba_mail>clairecottrill@mail.com</makeup_store1:has_ba_mail>
+        <makeup_store1:has_ba_name>Clairo</makeup_store1:has_ba_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#BA4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#BA4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#BrandAmbassador"/>
+        <makeup_store1:promotes rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Brand4"/>
+        <makeup_store1:has_ba_mail>maizenin@mail.com</makeup_store1:has_ba_mail>
+        <makeup_store1:has_ba_name>Mai Zenin</makeup_store1:has_ba_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Brand1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Brand1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Brand"/>
+        <makeup_store1:hasProduct rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Product1"/>
+        <makeup_store1:hasProduct rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Product2"/>
+        <makeup_store1:hasProduct rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Product3"/>
+        <makeup_store1:has_brand_code>B01</makeup_store1:has_brand_code>
+        <makeup_store1:has_brand_name>Barenbliss</makeup_store1:has_brand_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Brand2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Brand2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Brand"/>
+        <makeup_store1:hasProduct rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Product4"/>
+        <makeup_store1:hasProduct rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Product5"/>
+        <makeup_store1:hasProduct rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Product6"/>
+        <makeup_store1:has_brand_code>B02</makeup_store1:has_brand_code>
+        <makeup_store1:has_brand_name>Dazzle Me</makeup_store1:has_brand_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Brand3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Brand3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Brand"/>
+        <makeup_store1:hasProduct rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Product10"/>
+        <makeup_store1:hasProduct rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Product7"/>
+        <makeup_store1:hasProduct rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Product8"/>
+        <makeup_store1:hasProduct rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Product9"/>
+        <makeup_store1:has_brand_code>B03</makeup_store1:has_brand_code>
+        <makeup_store1:has_brand_name>Luxcrime</makeup_store1:has_brand_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Brand4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Brand4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Brand"/>
+        <makeup_store1:hasProduct rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Product11"/>
+        <makeup_store1:hasProduct rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Product12"/>
+        <makeup_store1:hasProduct rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Product13"/>
+        <makeup_store1:hasProduct rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Product14"/>
+        <makeup_store1:has_brand_code>B04</makeup_store1:has_brand_code>
+        <makeup_store1:has_brand_name>Make Over</makeup_store1:has_brand_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Exclusive -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Exclusive">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Price"/>
+        <makeup_store1:has_price_range>&gt;= Rp 200000,-</makeup_store1:has_price_range>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Moderate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Moderate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Price"/>
+        <makeup_store1:has_price_range>&gt;= Rp 75000,- and &lt; Rp 200000,-</makeup_store1:has_price_range>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Owner1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Owner1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Owner"/>
+        <makeup_store1:found rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Brand1"/>
+        <makeup_store1:has_owner_mail>jinakim@mail.com</makeup_store1:has_owner_mail>
+        <makeup_store1:has_owner_name>Jina Kim</makeup_store1:has_owner_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Owner2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Owner2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Owner"/>
+        <makeup_store1:found rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Brand2"/>
+        <makeup_store1:has_owner_mail>jeannoisette@mail.com</makeup_store1:has_owner_mail>
+        <makeup_store1:has_owner_name>Jean Noisette</makeup_store1:has_owner_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Owner3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Owner3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Owner"/>
+        <makeup_store1:found rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Brand3"/>
+        <makeup_store1:has_owner_mail>achmadfajri@mail.com</makeup_store1:has_owner_mail>
+        <makeup_store1:has_owner_name>Achmad Nurul Fajri</makeup_store1:has_owner_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Owner4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Owner4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Owner"/>
+        <makeup_store1:found rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Brand4"/>
+        <makeup_store1:has_owner_mail>nurhayatisubakat@mail.com</makeup_store1:has_owner_mail>
+        <makeup_store1:has_owner_name>Nurhayati Subakat</makeup_store1:has_owner_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Product1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Product1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Cushion"/>
+        <makeup_store1:costs rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Moderate"/>
+        <makeup_store1:has_product_code>B0101</makeup_store1:has_product_code>
+        <makeup_store1:has_product_name>Barenbliss True Beauty Inside Cushion</makeup_store1:has_product_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Product10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Product10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Blush"/>
+        <makeup_store1:costs rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Affordable"/>
+        <makeup_store1:has_product_code>B0304</makeup_store1:has_product_code>
+        <makeup_store1:has_product_name>Luxcrime Flushy Cheek Blush</makeup_store1:has_product_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Product11 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Product11">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Cushion"/>
+        <makeup_store1:costs rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Exclusive"/>
+        <makeup_store1:has_product_code>B0401</makeup_store1:has_product_code>
+        <makeup_store1:has_product_name>Hydrastay Lite Glow Cushion</makeup_store1:has_product_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Product12 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Product12">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#EyeProduct"/>
+        <makeup_store1:costs rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Exclusive"/>
+        <makeup_store1:has_product_code>B0402</makeup_store1:has_product_code>
+        <makeup_store1:has_product_name>Lash Impulse Waterproof Mascara</makeup_store1:has_product_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Product13 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Product13">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#LipProduct"/>
+        <makeup_store1:costs rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Exclusive"/>
+        <makeup_store1:has_product_code>B0403</makeup_store1:has_product_code>
+        <makeup_store1:has_product_name>Powerstay Glazed Lock Lip Pigment</makeup_store1:has_product_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Product14 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Product14">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Blush"/>
+        <makeup_store1:costs rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Exclusive"/>
+        <makeup_store1:has_product_code>B0404</makeup_store1:has_product_code>
+        <makeup_store1:has_product_name>Hydrastay Liquid Tint Blush</makeup_store1:has_product_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Product2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Product2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#EyeProduct"/>
+        <makeup_store1:costs rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Moderate"/>
+        <makeup_store1:has_product_code>B0102</makeup_store1:has_product_code>
+        <makeup_store1:has_product_name>Better Than Magic Eyeliner</makeup_store1:has_product_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Product3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Product3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#LipProduct"/>
+        <makeup_store1:costs rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Affordable"/>
+        <makeup_store1:has_product_code>B0103</makeup_store1:has_product_code>
+        <makeup_store1:has_product_name>Peach Makes Perfect Lip Tint</makeup_store1:has_product_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Product4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Product4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Cushion"/>
+        <makeup_store1:costs rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Affordable"/>
+        <makeup_store1:has_product_code>B0201</makeup_store1:has_product_code>
+        <makeup_store1:has_product_name>Better Than Filter Maxnificent Essence Cushion</makeup_store1:has_product_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Product5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Product5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#LipProduct"/>
+        <makeup_store1:costs rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Affordable"/>
+        <makeup_store1:has_product_code>B0203</makeup_store1:has_product_code>
+        <makeup_store1:has_product_name>Color Chrome Lip Matte</makeup_store1:has_product_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Product6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Product6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Blush"/>
+        <makeup_store1:costs rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Affordable"/>
+        <makeup_store1:has_product_code>B0204</makeup_store1:has_product_code>
+        <makeup_store1:has_product_name>Heart Melt Creamy Liquid Blush</makeup_store1:has_product_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Product7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Product7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Cushion"/>
+        <makeup_store1:costs rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Moderate"/>
+        <makeup_store1:has_product_code>B0301</makeup_store1:has_product_code>
+        <makeup_store1:has_product_name>Luxcrime Perfecting Cover Cushion</makeup_store1:has_product_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Product8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Product8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#EyeProduct"/>
+        <makeup_store1:costs rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Affordable"/>
+        <makeup_store1:has_product_code>B0302</makeup_store1:has_product_code>
+        <makeup_store1:has_product_name>Luxcrime Ultra Dreamy Eyeshadow Compact</makeup_store1:has_product_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Product9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Product9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#LipProduct"/>
+        <makeup_store1:costs rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Moderate"/>
+        <makeup_store1:has_product_code>B0303</makeup_store1:has_product_code>
+        <makeup_store1:has_product_name>Luxcrime Ultra Light Lip Stain</makeup_store1:has_product_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#1stBestPick -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#1stBestPick">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#BestPick"/>
+        <makeup_store1:awardedTo rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Product1"/>
+        <makeup_store1:awardedTo rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Product11"/>
+        <makeup_store1:awardedTo rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Product12"/>
+        <makeup_store1:awardedTo rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Product9"/>
+        <makeup_store1:has_rating_desc>Excellent product</makeup_store1:has_rating_desc>
+        <makeup_store1:has_rating_value>5 Stars</makeup_store1:has_rating_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#2ndBestPick -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#2ndBestPick">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#BestPick"/>
+        <makeup_store1:awardedTo rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Product13"/>
+        <makeup_store1:awardedTo rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Product14"/>
+        <makeup_store1:awardedTo rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Product4"/>
+        <makeup_store1:awardedTo rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Product7"/>
+        <makeup_store1:awardedTo rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Product8"/>
+        <makeup_store1:has_rating_desc>Good quality</makeup_store1:has_rating_desc>
+        <makeup_store1:has_rating_value>4 Stars</makeup_store1:has_rating_value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#3rdBestPick -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#3rdBestPick">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#BestPick"/>
+        <makeup_store1:awardedTo rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Product10"/>
+        <makeup_store1:awardedTo rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Product2"/>
+        <makeup_store1:awardedTo rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Product3"/>
+        <makeup_store1:awardedTo rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Product5"/>
+        <makeup_store1:awardedTo rdf:resource="http://www.semanticweb.org/lala/ontologies/2024/9/makeup_store.owl#Product6"/>
+        <makeup_store1:has_rating_desc>Average product</makeup_store1:has_rating_desc>
+        <makeup_store1:has_rating_value>3 Stars</makeup_store1:has_rating_value>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
